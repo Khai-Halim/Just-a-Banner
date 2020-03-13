@@ -20,14 +20,14 @@ header{
     #banner{
         position: relative;
         height: $height-banner;
-        background: url(img/banner.jpg)center/cover no-repeat;
+        background: url(../img/banner2.jpg)center/cover no-repeat;
         &:before{
             content: "";
             display: block;
             position: relative;
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.219);
+            background: rgba(0, 0, 0, 0.521);
         }
         #banner-title{
             display: inline-block;
@@ -40,10 +40,14 @@ header{
             text-align: center;
             h1{
                 font-size: 2.5rem;
+                color: $white;
+                text-shadow: -2px 2px 3px black;
             }
             p{
-                font-size: 1.2rem;
                 display: none;
+                font-size: 1.2rem;
+                color: $white;   
+                text-shadow: -2px 2px 3px black;
                 padding: 15px 0;
             }
             a{
@@ -56,6 +60,7 @@ header{
                 color: $white;
                 background: $blue;
                 border-radius: 5px;
+                box-shadow: -2px 2px 3px black;
                 
             }
         }
