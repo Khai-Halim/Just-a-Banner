@@ -12,12 +12,65 @@ header #menu {
 }
 
 header #banner {
+  position: relative;
   height: 60vh;
   background: url(img/banner.jpg) center/cover no-repeat;
+}
+
+header #banner:before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.219);
+}
+
+header #banner #banner-title {
+  display: inline-block;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+
+header #banner #banner-title h1 {
+  font-size: 2.5rem;
+}
+
+header #banner #banner-title p {
+  font-size: 1.2rem;
+  display: none;
+  padding: 15px 0;
+}
+
+header #banner #banner-title a {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 8px 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: #055bcc;
+  border-radius: 5px;
 }
 
 main {
   height: calc(100vh - 60vh - 100px);
   background: #ddd;
+}
+
+@media only screen and (min-width: 750px) {
+  header #banner #banner-title p {
+    display: block;
+  }
+  header #banner #banner-title a {
+    margin-top: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
