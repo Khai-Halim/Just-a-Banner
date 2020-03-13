@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+$height-menu: 100px;
+$height-banner: 60vh;
+
+header{
+    #menu{
+        height: $height-menu;
+        background: #ddd;
+    }
+    
+    #banner{
+        height: $height-banner;
+        background: url(img/banner.jpg)center/cover no-repeat;
+    }
+}
+
+main{
+    height: calc(100vh - #{$height-banner} - #{$height-menu});
+    background: #ddd;
+}
