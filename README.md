@@ -1,0 +1,1 @@
+Change the screen size to see how the banner responds.
